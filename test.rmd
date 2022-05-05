@@ -14,9 +14,15 @@ The code chunk appears:
 
 Type any R code in the chunk, for example:
 ```{r}
-mycars <- within (mtcars, {cyl <- ordered (cyl)})
+mycars <- within(mtcars, { cyl <- ordered(cyl) })
 mycars
 ```
 
 Now, click the **Run** button on the chunk toolbar to [execute](https://www.jetbrains.com/help/pycharm/r-markdown.html#run-r-code) the chunk code. The result should be placed under the chunk.
 Click the **Knit and Open Document** to build and preview an output.
+
+```{r}
+Sys.setlocale(category = "LC_ALL",locale = "English_United States.1252")
+plot(mycars)
+```
+```

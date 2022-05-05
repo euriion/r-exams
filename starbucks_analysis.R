@@ -90,7 +90,7 @@ pop_sido_text_data <- "sido,total,male,female
 제주특별자치도,676691,339071,337620
 "
 
-pop_sido_tbl <- read.csv(textConnection(pop_text_data))
+pop_sido_tbl <- read.csv(textConnection(pop_sido_text_data))
 sido_tbl <- pop_sido_tbl |> inner_join(stat_sido, by = "sido")
 
 # 상관계수
